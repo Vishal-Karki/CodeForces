@@ -1,9 +1,18 @@
-public class Test {
+import java.util.Scanner;
+
+public class MaximumGCD {
+    private static Scanner s = new Scanner(System.in);
+
     public static void main(String[] args) {
+        int t = s.nextInt();
 
-        System.out.println(GCD(36,24));
+        for(int z=0;z<t;z++){
+            int n = s.nextInt();
+
+            System.out.println(n/2);
+        }
+
     }
-
     static int GCD(int a, int b){
         int Max = Math.max(a,b);
         int Min = Math.min(a,b);
@@ -15,6 +24,4 @@ public class Test {
         }
         return gcd;
     }
-
-
 }
